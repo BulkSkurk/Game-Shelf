@@ -9,10 +9,15 @@ body {
   background-image: url('/img/Outer-Wilds/Outer-Wilds-bg.jpg');
   background-repeat: no-repeat;
   background-color: rgb(0, 0, 0);
+  background-size: cover;
 }
 a {
   text-decoration: none;
   color: black; /*Temporary, change later*/
+}
+nav,
+.footer-nav {
+  opacity: 0.9;
 }
 /*----Top Navbar Styling, not fixed, stands still when scrolling----*/
 .top-nav {
