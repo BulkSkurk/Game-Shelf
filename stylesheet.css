@@ -11,9 +11,11 @@ a {
   text-decoration: none;
   color: black; /*Temporary, change later*/
 }
+/*----Top Navbar Styling, not fixed, stands still when scrolling----*/
 .top-nav {
   background-color: black;
   min-height: 2.5rem;
+  border-bottom: solid 0.2rem gray;
 }
 .top-nav ul {
   list-style: none;
@@ -23,5 +25,25 @@ a {
 .top-nav a {
   margin: 0 1rem;
   font-size: 25px;
+  font-weight: 100;
   color: white;
+}
+/*----Floating Navbar Styling, not fixed, Moves when scrolling----*/
+.floating-nav {
+  margin-top: 1rem; /*Change to absolute*/
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+.floating-nav ul {
+  width: 15%;
+  list-style: none;
+  border: solid 0.2rem black;
+  border-radius: 1rem;
+  display: flex;
+  margin: 0 1rem;
+  justify-content: center;
+}
+.floating-nav a {
+  margin: 0 1rem;
 }
