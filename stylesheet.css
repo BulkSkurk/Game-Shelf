@@ -6,6 +6,9 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
     Verdana, sans-serif;
   font-size: 16px;
+  background-image: url('/img/Outer-Wilds/Outer-Wilds-bg.jpg');
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
 }
 a {
   text-decoration: none;
@@ -26,11 +29,12 @@ a {
   margin: 0 1rem;
   font-size: 25px;
   font-weight: 100;
-  color: white;
+  color: wheat;
 }
 /*----Floating Navbar Styling, not fixed, Moves when scrolling----*/
 .floating-nav {
-  margin-top: 1rem; /*Change to absolute*/
+  position: sticky;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0);
@@ -46,4 +50,23 @@ a {
 }
 .floating-nav a {
   margin: 0 1rem;
+  color: wheat;
+  /*rgb(179, 182, 179)*/
+}
+/*----Footer with links etc----*/
+.footer-nav {
+  border-top: solid 0.2rem gray;
+  height: 10rem;
+  width: 100%;
+  background-color: black;
+  position: absolute; /*Change this later-It just needs to be on the bottom of the page.*/
+  bottom: 0;
+}
+.footer-nav ul {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.footer-nav a {
+  color: wheat;
 }
