@@ -125,3 +125,8 @@ ul {
   width: 2rem;
   padding: 0 1rem;
 }
+
+/*---- Placed at bottom to ensure hover overrides other colors ----*/
+a:hover {
+  color: whitesmoke;
+}
