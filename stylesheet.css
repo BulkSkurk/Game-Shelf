@@ -68,7 +68,6 @@ ul {
   width: 100%;
   background-color: black;
 
-  position: absolute; /*Change this later-It just needs to be on the bottom of the page.*/
   bottom: 0;
 }
 .footer-nav ul {
@@ -90,9 +89,19 @@ ul {
   background-color: rgba(0, 0, 0, 0.6);
 
   /*-webkit-mask-image: linear-gradient(to left, black 80%, transparent);*/
+}
+.left-side-flip {
+  -webkit-mask-image: url(img/Masks/paper.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  width: 80%;
+  padding-left: 20rem;
+}
+.right-side-flip {
   -webkit-mask-image: url(img/Masks/border.png);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 120% 100%;
+  padding-right: 20rem;
   width: 80%;
 }
 .main-content p {
@@ -103,10 +112,11 @@ ul {
 }
 /*----Image Related, masks for effect etc.*/
 .mask-img {
-  height: 20rem;
-  width: auto;
+  height: 20%;
+  width: 30%;
 
   -webkit-mask-image: url(img/Masks/brush-mask-one.png);
+  -webkit-mask-repeat: no-repeat;
   mask-image: url(img/Masks/brush-mask-one.png);
   mask-size: 100%;
 }
