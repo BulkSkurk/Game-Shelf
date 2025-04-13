@@ -120,6 +120,12 @@ ul {
   mask-image: url(img/Masks/brush-mask-one.png);
   mask-size: 100%;
 }
+.mask-img:hover {
+  mask-size: 110%;
+}
+.mask-img:click {
+  -webkit-mask-image: none;
+}
 .footer-img {
   height: 2rem;
   width: 2rem;
