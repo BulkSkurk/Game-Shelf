@@ -19,8 +19,12 @@ nav,
 .footer-nav {
   opacity: 0.9;
 }
+ul {
+  list-style: none;
+}
 /*----Top Navbar Styling, not fixed, stands still when scrolling----*/
 .top-nav {
+  padding-top: 0.5rem;
   background-color: black;
   min-height: 2.5rem;
   border-bottom: solid 0.2rem gray;
@@ -63,6 +67,7 @@ nav,
   height: 10rem;
   width: 100%;
   background-color: black;
+
   position: absolute; /*Change this later-It just needs to be on the bottom of the page.*/
   bottom: 0;
 }
@@ -76,15 +81,24 @@ nav,
 }
 /*----Main Content blob, to contain images and text----*/
 .main-content {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: row;
   margin: 1rem auto;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  /*-webkit-mask-image: linear-gradient(to left, black 80%, transparent);*/
+  -webkit-mask-image: url(img/Masks/border.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 120% 100%;
+  width: 80%;
 }
 .main-content p {
-  opacity: 0.6;
+  opacity: 0.7;
   padding-left: 10rem;
+  padding-right: 15rem;
   width: 50%;
 }
 /*----Image Related, masks for effect etc.*/
@@ -94,5 +108,10 @@ nav,
 
   -webkit-mask-image: url(img/Masks/brush-mask-one.png);
   mask-image: url(img/Masks/brush-mask-one.png);
-  mask-size: 110%;
+  mask-size: 100%;
+}
+.footer-img {
+  height: 2rem;
+  width: 2rem;
+  padding: 0 1rem;
 }
