@@ -3,9 +3,9 @@
   padding: 0;
 }
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
-    Verdana, sans-serif;
+  font-family: fantasy;
   font-size: 16px;
+  color: wheat;
   background-image: url('/img/Outer-Wilds/Outer-Wilds-bg.jpg');
   background-repeat: no-repeat;
   background-color: rgb(0, 0, 0);
@@ -56,7 +56,6 @@ nav,
 .floating-nav a {
   margin: 0 1rem;
   color: wheat;
-  /*rgb(179, 182, 179)*/
 }
 /*----Footer with links etc----*/
 .footer-nav {
@@ -74,4 +73,26 @@ nav,
 }
 .footer-nav a {
   color: wheat;
+}
+/*----Main Content blob, to contain images and text----*/
+.main-content {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem auto;
+}
+.main-content p {
+  opacity: 0.6;
+  padding-left: 10rem;
+  width: 50%;
+}
+/*----Image Related, masks for effect etc.*/
+.mask-img {
+  height: 20rem;
+  width: auto;
+
+  -webkit-mask-image: url(img/Masks/brush-mask-one.png);
+  mask-image: url(img/Masks/brush-mask-one.png);
+  mask-size: 110%;
 }
