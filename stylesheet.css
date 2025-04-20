@@ -45,25 +45,67 @@ ul {
 /*----Floating Navbar Styling, not fixed, Moves when scrolling----*/
 .floating-nav {
   position: fixed;
-  margin-top: 1rem;
-  background-color: rgba(255, 255, 255, 0);
-  border: solid 0.2rem gray;
-  border-radius: 1rem;
-  left: 50%;
+  margin-top: 5rem;
+  left: 95%;
+
   transform: translateX(-50%);
   z-index: 1000;
+  opacity: 0.9;
+}
+.floating-nav li {
+  height: 120px;
+  width: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.floating-nav li a {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.floating-nav li:hover a {
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+  font-size: 25px;
+}
+.floating-nav li:hover {
+  background-size: 0 0;
+}
+.floating-nav li:nth-child(1) {
+  background-image: url(/img/Outer-Wilds/8gtup1hqxqh91.png);
+}
+.floating-nav li:nth-child(2) {
+  background-image: url(/img/Outer-Wilds/8gtup1hqxqh91.png);
+}
+.floating-nav li:nth-child(3) {
+  background-image: url(/img/Outer-Wilds/8gtup1hqxqh91.png);
+}
+.floating-nav li:nth-child(4) {
+  background-image: url(/img/Outer-Wilds/8gtup1hqxqh91.png);
+}
+.floating-nav:hover {
+  border-radius: 1rem;
+  opacity: 1;
+  pointer-events: auto;
 }
 .floating-nav ul {
-  width: 15%;
   list-style: none;
-
   display: flex;
-  margin: 0 1rem;
+  flex-direction: column;
+  gap: 4rem;
+}
+.floating-nav:hover ul {
+  opacity: 1;
 }
 .floating-nav a {
   margin: 0 1rem;
   color: wheat;
 }
+
 /*----Footer with links etc----*/
 .footer-nav {
   border-top: solid 0.2rem gray;
