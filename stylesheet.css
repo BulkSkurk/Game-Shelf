@@ -66,26 +66,28 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  color: rgb(28, 155, 104);
 }
 .floating-nav li:hover a {
   opacity: 1;
   transition: all 0.8s ease-in-out;
   font-size: 25px;
+  color: whitesmoke;
 }
 .floating-nav li:hover {
   background-size: 0 0;
 }
 .floating-nav li:nth-child(1) {
-  background-image: url(/img/Outer-Wilds/8gtup1hqxqh91.png);
+  background-image: url(/img/Outer-Wilds/timber-hearth.png);
 }
 .floating-nav li:nth-child(2) {
-  background-image: url(/img/Outer-Wilds/8gtup1hqxqh91.png);
+  background-image: url(/img/Outer-Wilds/hourglass-twins.png);
 }
 .floating-nav li:nth-child(3) {
-  background-image: url(/img/Outer-Wilds/8gtup1hqxqh91.png);
+  background-image: url(/img/Outer-Wilds/brittle-hollow.png);
 }
 .floating-nav li:nth-child(4) {
-  background-image: url(/img/Outer-Wilds/8gtup1hqxqh91.png);
+  background-image: url(/img/Outer-Wilds/dark-bramble.png);
 }
 .floating-nav:hover {
   border-radius: 1rem;
