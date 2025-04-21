@@ -39,6 +39,9 @@ body {
     sans-serif;
   color: rgb(255, 255, 255);
 }
+#other {
+  background-color: rgb(20, 18, 18);
+}
 /*---- General settings contd. ----*/
 a {
   text-decoration: none;
@@ -49,6 +52,37 @@ nav,
 }
 ul {
   list-style: none;
+} /*---- Other wrappers etc for About me and FAQ section ----*/
+.other-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90vh;
+  margin: 10vh auto;
+}
+
+.top-row {
+  display: flex;
+  flex: 1;
+  background-color: black;
+  border-radius: 1rem;
+}
+.top-row img {
+  border-radius: 1rem;
+}
+
+.other-left,
+.other-right {
+  margin: 1rem 1rem;
+}
+.other-left.faq {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.other-bottom {
+  background-color: black;
+  border-radius: 1rem;
+  margin-top: 2vh;
+  padding: 1rem 1rem;
 }
 /*----Top Navbar Styling, not fixed, stands still when scrolling----*/
 .top-nav {
@@ -346,4 +380,40 @@ a:hover {
   max-height: 90vh;
   box-shadow: 0 0 2rem rgba(255, 255, 255, 0.3);
   border-radius: 1rem;
+}
+/*---- Modal popup from template ----*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #111;
+  color: #ffe5bc;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 1rem;
+  width: 50%;
+  max-width: 600px;
+  box-shadow: 0 0 20px #000;
+  font-family: 'Courier New', monospace;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #fff;
 }

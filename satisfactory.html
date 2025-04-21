@@ -9,12 +9,12 @@
   <body id="satisfactory">
     <nav class="top-nav">
       <ul>
-        <li><a href="#">About Me</a></li>
+        <li><a href="about-me.html">About Me</a></li>
         <li><a href="index.html">Outer Wilds</a></li>
         <li><a href="disco-elysium.html">Disco Elysium</a></li>
         <li><a href="stanley-parable.html">Stanley Parable</a></li>
         <li><a href="satisfactory.html">Satisfactory</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
     </nav>
     <nav class="floating-nav">
@@ -52,7 +52,7 @@
         <img
           class="mask-img sf-img"
           src="img/Satisfactory/sats-josh.jpg"
-          alt="Disco Elysium hangman"
+          alt="Satisfactory Belt Tornado by Josh"
           onclick="openImage(this.src)"
         />
       </div>
@@ -92,7 +92,7 @@
         <img
           class="mask-img sf-img"
           src="img/Satisfactory/sats-train.jpg"
-          alt="Disco Elysium drunk man in hostel room"
+          alt="Satisfactory Train above factory"
           onclick="openImage(this.src)"
         />
       </div>
@@ -130,7 +130,7 @@
         <img
           class="mask-img sf-img"
           src="img/Satisfactory/sats-kibitz.png"
-          alt="Disco Elysium drunk men in park"
+          alt="Satisfactory overview of huge factory"
           onclick="openImage(this.src)"
         />
       </div>
@@ -170,7 +170,7 @@
         <img
           class="mask-img sf-img"
           src="img/Satisfactory/sats-cool.png"
-          alt="Disco Elysium Hung disco man in tree"
+          alt="Satisfactory view of green tinted factory from below"
           onclick="openImage(this.src)"
         />
       </div>
@@ -179,13 +179,14 @@
       <nav>
         <ul>
           <li>
-            <a href="#">About Me</a>
+            <a href="about-me.html">About Me</a>
           </li>
           -
-          <li><a href="#">FAQ</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           -
-          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#" onclick="openTerms()">Terms of Service</a></li>
         </ul>
+        <div id="termsModal" class="modal"></div>
         <ul>
           <li>
             <a href="https://www.instagram.com/bulkskurk/"
