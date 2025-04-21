@@ -17,21 +17,27 @@ body {
 }
 /*---- Separate backgrounds ----*/
 #outer-wilds {
-  /* background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg'); */
-  background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg');
+  background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg');
+  /* background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg'); */
   font-family: fantasy, sans-serif;
 }
 #disco-elysium {
-  /* background-image: url('../img/Disco-Elysium/disco-elysium-bg.png'); */
-  background-image: url('/Game-Shelf/img/Disco-Elysium/disco-elysium-bg.png');
+  background-image: url('../img/Disco-Elysium/disco-elysium-bg.png');
+  /* background-image: url('/Game-Shelf/img/Disco-Elysium/disco-elysium-bg.png'); */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   font-weight: 500;
 }
 #stanley-parable {
-  /* background-image: url('../img/Stanley-Parable/stanley-parable-bg.png'); */
-  background-image: url('/Game-Shelf/img/Stanley-Parable/stanley-parable-bg.png');
+  background-image: url('../img/Stanley-Parable/stanley-parable-bg.png');
+  /* background-image: url('/Game-Shelf/img/Stanley-Parable/stanley-parable-bg.png'); */
   font-family: 'Courier New', Courier, monospace;
+}
+#satisfactory {
+  background-image: url('../img/Satisfactory/satisfactory-bg.webp');
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+  color: rgb(255, 255, 255);
 }
 /*---- General settings contd. ----*/
 a {
@@ -139,6 +145,22 @@ ul {
   background-image: url(/img/Stanley-Parable/yellow-arrow.webp);
   font-family: fantasy;
 }
+/*---- Satisfactory ----*/
+.floating-nav .sf-li li {
+  background-size: 100%;
+  background-image: url(/img/Satisfactory/835640_gear_512x512.png);
+  font-weight: 700;
+}
+.floating-nav .sf-li li:nth-child(odd) {
+  transform: translateX(-20px);
+}
+.floating-nav .sf-li li:nth-child(even) {
+  transform: translateX(20px);
+}
+.floating-nav .sf-li li:hover {
+  background-position-x: 200px;
+}
+
 .floating-nav:hover {
   border-radius: 1rem;
   opacity: 1;
@@ -202,6 +224,11 @@ ul {
   flex-direction: column;
   padding-left: 25rem;
 }
+.main-content.sf {
+  background-image: url(/img/Satisfactory/plates.jpg);
+  width: 30%;
+  padding-left: 0;
+}
 .main-content.ow {
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -260,6 +287,15 @@ ul {
 .mask-img.sp-img {
   margin-left: 10rem;
   margin-top: 2rem;
+}
+.mask-img.sf-img {
+  margin-left: 10rem;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mask-img.sf-img:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px,
+    rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 .mask-img:hover {
   mask-size: 110%;
