@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="stylesheet.css" rel="stylesheet" />
+    <title>Game Shelf</title>
+  </head>
+  <body id="other">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="index.html">Outer Wilds</a></li>
+        <li><a href="disco-elysium.html">Disco Elysium</a></li>
+        <li><a href="stanley-parable.html">Stanley Parable</a></li>
+        <li><a href="satisfactory.html">Satisfactory</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="other-wrapper">
+      <div class="top-row">
+        <div class="other-left faq">
+          <p>
+            <strong>Q: Why did you make this site?</strong><br /> A: This project was created as part of a school assignment to practice <strong>HTML</strong>, <strong>CSS</strong>, and a touch of <strong>JavaScript</strong>.<br /> But instead of going with a generic portfolio or static resume, I thought—why not have fun with it? So I turned it into a tribute to some of the games that left an impression on me.
+            <br /><br />
+            <strong>Q: Are these your favorite games?</strong><br /> A: <strong>Some of them, absolutely!</strong> They all mean something different to me—whether it’s the mystery of <em>Outer Wilds</em>, the absurd genius of <em>Disco Elysium</em>, or the structured chaos of <em>Satisfactory</em>.<br /> Each game let me play with different visual styles, layouts, and writing tones, so I could stretch my creative and coding muscles a bit more.
+            <br /><br />
+            <strong>Q: Is everything built from scratch?</strong><br /> A: Yep! No frameworks, just a few templates (lightbox and ToS popup which is a modal). Otherwise just <strong>good old-fashioned hand-coded HTML & CSS</strong>, with some JavaScript sprinkled in to handle interactivity like the image lightboxes.<br /> This whole thing has been a great way to learn responsive design, custom layouts, and how to make things weird on purpose.
+            <br /><br />
+            <strong>Q: What’s with all the weird references?</strong><br /> A: It’s a part of my personality. I like things that are a little surreal, a little unexpected.<br /> Plus, if you can make someone laugh or pause for a second, they’re more likely to remember your work.
+            <br /><br />
+
+            <strong>Q: Who are you?</strong><br /> A: My name’s Adam, I’m 37, and I’ve recently taken the plunge into <strong>web development</strong>.<br /> I come from a tech background but decided to shift gears and dive headfirst into the front-end world. This site is a snapshot of that journey so far.
+
+            <br /><br />
+
+            <strong>Q: Are you planning to keep working on this?</strong><br /> A: Possibly! I might expand it with more games, animations, or rewrite it using a JS framework once I’ve learned one properly.<br /> Right now, the focus was getting a solid, creative project out the door using just the basics.
+
+            <br /><br />
+
+            <strong>Q: Why isn’t there a dark mode toggle?</strong><br /> A: Because it’s already dark enough—emotionally and stylistically. 😎
+
+            <br /><br />
+
+            <strong>Q: What’s the biggest thing you learned during this project?</strong><br /> A: How <strong>layout and structure</strong> affect everything. It’s one thing to style something—it’s another to design with intent, responsiveness, and accessibility in mind.<br /> Also: never underestimate how much fun you can have with <flexbox> and a few good fonts.
+
+            <br /><br />
+
+            <strong>Q: And... the horse?</strong><br /> A: The horse chose me. It is now part of the brand.<br /> Let us never speak of this again.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-nav">
+      <nav>
+        <ul>
+          <li>
+            <a href="about-me.html">About Me</a>
+          </li>
+          -
+          <li><a href="faq.html">FAQ</a></li>
+          -
+          <li><a href="#" onclick="openTerms()">Terms of Service</a></li>
+        </ul>
+        <div id="termsModal" class="modal"></div>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/bulkskurk/"
+              ><img class="footer-img" src="img/Icons/instagram.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/adam.thelin"
+              ><img class="footer-img" src="img/Icons/free-facebook-logo-icon-2428-thumb.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/BulkSkurk"
+              ><img class="footer-img" src="img/Icons/github-squared.png"
+            /></a>
+          </li>
+        </ul>
+        <div>
+          <img class="footer-detail" src="img/Other/chad.png" />
+          <p>Copyright© Hej-och-välkommen</p>
+        </div>
+      </nav>
+    </footer>
+    <div id="lightbox" class="lightbox" onclick="closeImage()">
+      <img id="lightbox-img" src="" alt="Full size preview" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

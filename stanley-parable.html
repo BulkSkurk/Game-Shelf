@@ -9,12 +9,12 @@
   <body id="stanley-parable">
     <nav class="top-nav">
       <ul>
-        <li><a href="#">About Me</a></li>
+        <li><a href="about-me.html">About Me</a></li>
         <li><a href="index.html">Outer Wilds</a></li>
         <li><a href="disco-elysium.html">Disco Elysium</a></li>
         <li><a href="stanley-parable.html">Stanley Parable</a></li>
         <li><a href="satisfactory.html">Satisfactory</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
     </nav>
     <nav class="floating-nav">
@@ -60,7 +60,7 @@
         <img
           class="mask-img sp-img"
           src="img/Stanley-Parable/stanley-parable-bucket.png"
-          alt="Disco Elysium hangman"
+          alt="Stanley parable office space with picture of bucket"
           onclick="openImage(this.src)"
         />
       </div>
@@ -110,7 +110,7 @@
         <img
           class="mask-img sp-img"
           src="img/Stanley-Parable/stanley-parable-choice.jpeg"
-          alt="Disco Elysium drunk man in hostel room"
+          alt="Stanley parable red door with arrows pointing at it"
           onclick="openImage(this.src)"
         />
       </div>
@@ -159,7 +159,7 @@
         <img
           class="mask-img sp-img"
           src="img/Stanley-Parable/stanley-parable-nature.png"
-          alt="Disco Elysium drunk men in park"
+          alt="Stanley parable room with shrubberies and a fast forward button on a stand"
           onclick="openImage(this.src)"
         />
       </div>
@@ -197,7 +197,7 @@
         <img
           class="mask-img sp-img"
           src="img/Stanley-Parable/stanley-parable-money.webp"
-          alt="Disco Elysium Hung disco man in tree"
+          alt="Stanley parable an office cubicle covered in dollar-bills"
           onclick="openImage(this.src)"
         />
       </div>
@@ -206,13 +206,14 @@
       <nav>
         <ul>
           <li>
-            <a href="#">About Me</a>
+            <a href="about-me.html">About Me</a>
           </li>
           -
-          <li><a href="#">FAQ</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           -
-          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#" onclick="openTerms()">Terms of Service</a></li>
         </ul>
+        <div id="termsModal" class="modal"></div>
         <ul>
           <li>
             <a href="https://www.instagram.com/bulkskurk/"
