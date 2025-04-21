@@ -126,10 +126,22 @@ ul {
 .floating-nav .de-li li:nth-child(4) {
   background-image: url(/img/Disco-Elysium/Neck_tie.webp);
 }
+/*---- Stanley Parable ----*/
+.floating-nav .sp-li li {
+  padding-top: 10%;
+  padding-right: 80%;
+  padding-left: 50%;
+  background-image: url(/img/Stanley-Parable/yellow-arrow.webp);
+}
 .floating-nav:hover {
   border-radius: 1rem;
   opacity: 1;
   pointer-events: auto;
+}
+.floating-nav:hover .sp-li a {
+  color: yellow;
+  font-size: 50px;
+  text-shadow: -10px 10px 0px #00e6e6, -20px 20px 0px #01cccc, -30px 30px 0px #00bdbd;
 }
 .floating-nav ul {
   list-style: none;
@@ -179,6 +191,10 @@ ul {
   flex-direction: row;
   margin: 1rem auto;
   border-radius: 1rem;
+}
+.main-content.centered {
+  flex-direction: column;
+  padding-left: 25rem;
 }
 .main-content.ow {
   background-color: rgba(0, 0, 0, 0.6);
@@ -233,6 +249,10 @@ ul {
 
   mask-image: url(img/Masks/brush-mask-three.png);
   mask-repeat: no-repeat;
+}
+.mask-img.sp-img {
+  margin-left: 10rem;
+  margin-top: 2rem;
 }
 .mask-img:hover {
   mask-size: 110%;
