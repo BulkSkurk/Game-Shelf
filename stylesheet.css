@@ -17,12 +17,16 @@ body {
 }
 /*---- Separate backgrounds ----*/
 #outer-wilds {
-  /* background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg'); */
-  background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg');
+  background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg');
+  /* background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg'); */
 }
 #disco-elysium {
-  /* background-image: url('../img/Disco-Elysium/disco-elysium-bg.png'); */
-  background-image: url('/Game-Shelf/img/Disco-Elysium/disco-elysium-bg.png');
+  background-image: url('../img/Disco-Elysium/disco-elysium-bg.png');
+  /* background-image: url('/Game-Shelf/img/Disco-Elysium/disco-elysium-bg.png'); */
+}
+#stanley-parable {
+  background-image: url('../img/Stanley-Parable/stanley-parable-bg.png');
+  /* background-image: url('/Game-Shelf/img/Stanley-Parable/stanley-parable-bg.png'); */
 }
 /*---- General settings contd. ----*/
 a {
