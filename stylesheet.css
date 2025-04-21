@@ -102,8 +102,15 @@ ul {
 }
 /*---- Disco Elysium ----*/
 .floating-nav .de-li li {
-  background-color: black;
-  border: solid 4px gray;
+  /* background-color: black;
+  border: solid 4px gray; */
+  padding-top: 10%;
+  padding-right: 20%;
+  padding-left: 50%;
+  -webkit-mask-image: url(img/Masks/brush-mask-two.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 150% 120%;
+  background-color: rgba(0, 0, 0, 0.449);
 }
 .floating-nav .de-li li:nth-child(1) {
   background-image: url(/img/Disco-Elysium/kim-katsuragi.png);
