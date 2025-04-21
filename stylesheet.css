@@ -2,19 +2,25 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: fantasy;
   font-size: 16px;
   color: wheat;
-  /*background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg');*/
-  background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg');
+
   background-repeat: no-repeat;
   background-color: rgb(0, 0, 0);
   background-size: cover;
+  background-attachment: fixed;
+}
+#outer-wilds {
+  background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg');
+  /*background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg');*/
 }
 a {
   text-decoration: none;
-  color: black; /*Temporary, change later*/
 }
 nav,
 .footer-nav {
@@ -43,31 +49,79 @@ ul {
 }
 /*----Floating Navbar Styling, not fixed, Moves when scrolling----*/
 .floating-nav {
-  position: sticky;
-  margin-top: 1rem;
+  position: fixed;
+  margin-top: 5rem;
+  left: 95%;
+
+  transform: translateX(-50%);
+  z-index: 1000;
+  opacity: 0.9;
+}
+.floating-nav li {
+  height: 120px;
+  width: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.floating-nav li a {
+  opacity: 0;
   display: flex;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0);
+  margin-top: 2rem;
+  color: rgb(28, 155, 104);
+}
+.floating-nav li:hover a {
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+  font-size: 25px;
+  color: whitesmoke;
+}
+.floating-nav li:hover {
+  background-size: 0 0;
+}
+.floating-nav li:nth-child(1) {
+  background-image: url(/img/Outer-Wilds/timber-hearth.png);
+}
+.floating-nav li:nth-child(2) {
+  background-image: url(/img/Outer-Wilds/hourglass-twins.png);
+}
+.floating-nav li:nth-child(3) {
+  background-image: url(/img/Outer-Wilds/brittle-hollow.png);
+}
+.floating-nav li:nth-child(4) {
+  background-image: url(/img/Outer-Wilds/dark-bramble.png);
+}
+.floating-nav:hover {
+  border-radius: 1rem;
+  opacity: 1;
+  pointer-events: auto;
 }
 .floating-nav ul {
-  width: 15%;
   list-style: none;
-  border: solid 0.2rem black;
-  border-radius: 1rem;
   display: flex;
-  margin: 0 1rem;
-  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.floating-nav:hover ul {
+  opacity: 1;
 }
 .floating-nav a {
   margin: 0 1rem;
   color: wheat;
 }
+
 /*----Footer with links etc----*/
 .footer-nav {
+  position: relative;
+  z-index: 2000;
   border-top: solid 0.2rem gray;
-  height: 10rem;
+  height: auto;
   width: 100%;
   background-color: black;
+  padding-bottom: 2rem;
 
   bottom: 0;
 }
@@ -79,6 +133,12 @@ ul {
 .footer-nav a {
   color: wheat;
 }
+.footer-nav p {
+  opacity: 0.2;
+}
+.footer-nav p:hover {
+  opacity: 1;
+}
 /*----Main Content blob, to contain images and text----*/
 .main-content {
   padding-top: 5rem;
@@ -88,8 +148,6 @@ ul {
   margin: 1rem auto;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.6);
-
-  /*-webkit-mask-image: linear-gradient(to left, black 80%, transparent);*/
 }
 .left-side-flip {
   -webkit-mask-image: url(img/Masks/paper.png);
@@ -113,6 +171,7 @@ ul {
 }
 /*----Image Related, masks for effect etc.*/
 .mask-img {
+  cursor: pointer;
   height: 20%;
   width: 30%;
 
@@ -124,16 +183,50 @@ ul {
 .mask-img:hover {
   mask-size: 110%;
 }
-.mask-img:click {
-  -webkit-mask-image: none;
-}
 .footer-img {
   height: 2rem;
   width: 2rem;
   padding: 0 1rem;
 }
+.footer-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 95%;
+
+  height: 5rem;
+  width: 5rem;
+}
 
 /*---- Placed at bottom to ensure hover overrides other colors ----*/
 a:hover {
   color: whitesmoke;
+}
+/*---- Lightbox from template ----*/
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+}
+.lightbox.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
 }
