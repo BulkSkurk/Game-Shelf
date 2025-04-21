@@ -15,10 +15,16 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+/*---- Separate backgrounds ----*/
 #outer-wilds {
   background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg');
   /*background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg');*/
 }
+#disco-elysium {
+  background-image: url('../img/Disco-Elysium/disco-elysium-bg.png');
+  /*background-image: url('/Game-Shelf/img/Disco-Elysium/disco-elysium-bg.png');*/
+}
+/*---- General settings contd. ----*/
 a {
   text-decoration: none;
 }
@@ -82,18 +88,21 @@ ul {
 .floating-nav li:hover {
   background-size: 0 0;
 }
-.floating-nav li:nth-child(1) {
+/*---- Separate Icons per theme ----*/
+/*---- Outer Wilds ----*/
+.floating-nav .ow-li li:nth-child(1) {
   background-image: url(/img/Outer-Wilds/timber-hearth.png);
 }
-.floating-nav li:nth-child(2) {
+.floating-nav .ow-li li:nth-child(2) {
   background-image: url(/img/Outer-Wilds/hourglass-twins.png);
 }
-.floating-nav li:nth-child(3) {
+.floating-nav .ow-li li:nth-child(3) {
   background-image: url(/img/Outer-Wilds/brittle-hollow.png);
 }
-.floating-nav li:nth-child(4) {
+.floating-nav .ow-li li:nth-child(4) {
   background-image: url(/img/Outer-Wilds/dark-bramble.png);
 }
+/*---- Disco Elysium ----*/
 .floating-nav:hover {
   border-radius: 1rem;
   opacity: 1;
