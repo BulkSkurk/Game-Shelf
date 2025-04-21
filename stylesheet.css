@@ -9,12 +9,15 @@ body {
   font-family: fantasy;
   font-size: 16px;
   color: wheat;
-  background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg');
-  /*background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg');*/
+
   background-repeat: no-repeat;
   background-color: rgb(0, 0, 0);
   background-size: cover;
   background-attachment: fixed;
+}
+#outer-wilds {
+  background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg');
+  /*background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg');*/
 }
 a {
   text-decoration: none;
