@@ -16,8 +16,8 @@ body {
   background-attachment: fixed;
 }
 #outer-wilds {
-  background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg');
-  /*background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg');*/
+  /* background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg'); */
+  background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg');
 }
 a {
   text-decoration: none;
