@@ -193,15 +193,32 @@ ul {
   width: 50%;
 }
 /*----Image Related, masks for effect etc.*/
+/*----Image Related, different masks for different pages*/
 .mask-img {
   cursor: pointer;
   height: 20%;
   width: 30%;
 
+  mask-size: 100%;
+}
+/*----Image Related, Outer Wilds Mask*/
+.mask-img.ow-img {
+  margin-top: 10rem;
   -webkit-mask-image: url(img/Masks/brush-mask-one.png);
   -webkit-mask-repeat: no-repeat;
+
   mask-image: url(img/Masks/brush-mask-one.png);
-  mask-size: 100%;
+  mask-repeat: no-repeat;
+}
+/*----Image Related, Disco Elysium Mask*/
+.mask-img.de-img {
+  margin-top: 5rem;
+  -webkit-mask-image: url(img/Masks/brush-mask-two.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position-y: -6rem;
+
+  mask-image: url(img/Masks/brush-mask-two.png);
+  mask-repeat: no-repeat;
 }
 .mask-img:hover {
   mask-size: 110%;
