@@ -16,6 +16,8 @@ body {
   background-attachment: fixed;
 }
 /*---- Separate backgrounds ----*/
+/*---- Kommentar för william! Om du vill se bakgrunderna på github pages, avkommentera koden med /Game-Shelf/ Path och
+kommentera koden som är aktiv just nu*/
 #outer-wilds {
   background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg');
   /* background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg'); */
