@@ -53,4 +53,4 @@ Each section was a chance to practice:
 
 Everything was built from scratch — no frameworks were used.
 
-Hope you enjoy it! 🚀
+Link to powerpoint presentation: [Download Here](/img/Presentation/HTML%20och%20CSS%20-%20Gruppuppgift.pptx)
