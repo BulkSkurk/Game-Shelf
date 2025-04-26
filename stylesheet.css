@@ -19,25 +19,25 @@ body {
 /*---- Kommentar för william! Om du vill se bakgrunderna på github pages, avkommentera koden med /Game-Shelf/ Path och
 kommentera koden som är aktiv just nu*/
 #outer-wilds {
-  background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg');
-  /* background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg'); */
+  /* background-image: url('../img/Outer-Wilds/Outer-Wilds-bg.jpg'); */
+  background-image: url('/Game-Shelf/img/Outer-Wilds/Outer-Wilds-bg.jpg');
   font-family: fantasy, sans-serif;
 }
 #disco-elysium {
-  background-image: url('../img/Disco-Elysium/disco-elysium-bg.png');
-  /* background-image: url('/Game-Shelf/img/Disco-Elysium/disco-elysium-bg.png'); */
+  /* background-image: url('../img/Disco-Elysium/disco-elysium-bg.png'); */
+  background-image: url('/Game-Shelf/img/Disco-Elysium/disco-elysium-bg.png');
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   font-weight: 500;
 }
 #stanley-parable {
-  background-image: url('../img/Stanley-Parable/stanley-parable-bg.png');
-  /* background-image: url('/Game-Shelf/img/Stanley-Parable/stanley-parable-bg.png'); */
+  /* background-image: url('../img/Stanley-Parable/stanley-parable-bg.png'); */
+  background-image: url('/Game-Shelf/img/Stanley-Parable/stanley-parable-bg.png');
   font-family: 'Courier New', Courier, monospace;
 }
 #satisfactory {
-  background-image: url('../img/Satisfactory/satisfactory-bg.webp');
-  /* background-image: url('/Game-Shelf/img/Satisfactory/satisfactory-bg.webp'); */
+  /* background-image: url('../img/Satisfactory/satisfactory-bg.webp'); */
+  background-image: url('/Game-Shelf/img/Satisfactory/satisfactory-bg.webp');
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
     sans-serif;
   color: rgb(255, 255, 255);
