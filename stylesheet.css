@@ -141,16 +141,16 @@ ul {
   background-size: 0 0;
 }
 .floating-nav li:nth-child(1) {
-  background-image: url(/img/Outer-Wilds/timber-hearth.png);
+  background-image: url(/Game-Shelf/img/Outer-Wilds/timber-hearth.png);
 }
 .floating-nav li:nth-child(2) {
-  background-image: url(/img/Outer-Wilds/hourglass-twins.png);
+  background-image: url(/Game-Shelf/Outer-Wilds/hourglass-twins.png);
 }
 .floating-nav li:nth-child(3) {
-  background-image: url(/img/Outer-Wilds/brittle-hollow.png);
+  background-image: url(/Game-Shelf/Outer-Wilds/brittle-hollow.png);
 }
 .floating-nav li:nth-child(4) {
-  background-image: url(/img/Outer-Wilds/dark-bramble.png);
+  background-image: url(/Game-Shelf/Outer-Wilds/dark-bramble.png);
 }
 /*---- Disco Elysium ----*/
 .floating-nav .de-li li {
